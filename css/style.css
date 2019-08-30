@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #17223b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin: 0;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+}
+
+.header ul li {
+    height: inherit;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.logo {
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.container figure {
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.menu {
+    height: inherit;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.section-title {
+    font-family: 'Fjalla One', sans-serif;
+    color: #056fff;
+    text-transform: uppercase;
+    margin: 40px 0px;
+}
+
+.hero-description {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: -.2px;
+        color: #fff;
+}
+
+h1 strong {
+    color: #056fff;
+}
+
+.hero{
+    height: 300px;
+    background-color: #17223b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero-image {
+    object-fit: cover;
+}
+
+.portfolio, .form-contact, .experience {
+    padding: 0px 20px;
+}
+
+.projects {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-detailsContainer {
+    width: 500px;
+}
+
+h2 {
+    color: #056fff;
+    text-transform: uppercase;
+}
+
+.experience {
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 0 20px;
+    margin: 0 0 20px;
+    flex-wrap: wrap;
+}
+
+.experience-title {
+    padding: 0px 20px;
+}
+
+.my-experience {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 480px;
+    margin: 0 20px 20px 0;
+    background-color: #daf1f9;
+}
+
+.experience-img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;   
+}
+
+.experience-descriptionContent {
+    background-color: #fff;
+    margin: 20px 40px;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+.experience-description {
+    text-align: left;
+    padding: 0px 0 20px
+}
+
+.view-experience {
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 3px;
+}
+
+.form-contact {
+    background-color: #056fff;
+    height: 160px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-contact input {
+    border-color: gray;
+    padding:  5px 20px 5px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+.form-contact button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 100px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.form-contact h3 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px 0 20px;
+}
+
+form {
+    display: block;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    background-size: 50px 50px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.social {
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.social-link.twitter {
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('../images/fb.svg');
+}
+
+.social-link.github {
+    background-image: url('../images/github.svg');
+}
+.social-link.behance {
+    background-image: url('../images/behance.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../images/instagram.svg');
+}
+
+.social-link.linkedin {
+    background-image: url('../images/linkedin.svg');
+}
+
+.footer {
+    background-color: #17223b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer-designer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    height: inherit;
+    flex-wrap: inherit;
+}
