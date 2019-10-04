@@ -230,43 +230,28 @@ form {
     align-items: center;
 }
 
+label {
+    color: #fff;
+    margin: 0 0 20px;
+}
+
 .social-link {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid #fff;
     background-size: 50px 50px;
-    background-color: #fff;
     margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Font Awesome 5 Brands';
 }
 
 .social {
     display: inherit;
     justify-content: inherit;
     align-items: center;
-}
-
-.social-link.twitter {
-    background-image: url('../images/twitter.svg');
-}
-
-.social-link.facebook {
-    background-image: url('../images/fb.svg');
-}
-
-.social-link.github {
-    background-image: url('../images/github.svg');
-}
-.social-link.behance {
-    background-image: url('../images/behance.svg');
-}
-
-.social-link.instagram {
-    background-image: url('../images/instagram.svg');
-}
-
-.social-link.linkedin {
-    background-image: url('../images/linkedin.svg');
 }
 
 .footer {
@@ -285,6 +270,10 @@ form {
 .footer-designer a {
     color: #fff;
     text-decoration: none;
+}
+
+span {
+    color: red;
 }
 
 
