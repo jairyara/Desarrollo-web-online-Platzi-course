@@ -248,6 +248,10 @@ label {
     font-family: 'Font Awesome 5 Brands';
 }
 
+.social-links {
+    fill: red;
+}
+
 .social {
     display: inherit;
     justify-content: inherit;
