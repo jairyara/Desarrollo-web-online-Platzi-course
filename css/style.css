@@ -17,6 +17,17 @@
     flex-wrap: wrap;
 }
 
+.burguer div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+}
+
+.burguer {
+    display: none;
+}
+
 .header ul {
     display: flex;
     height: inherit;
@@ -54,7 +65,6 @@
     color: #fff;
 }
 
-
 ol, ul {
     margin: 0;
     padding: 0;
@@ -64,7 +74,6 @@ ol, ul {
 figure {
     margin: 0;
 }
-
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -79,34 +88,39 @@ body {
     margin: 40px 0px;
 }
 
-.hero-description {
-        margin: 0;
-        font-size: 30px;
-        line-height: 1.5;
-        letter-spacing: -.2px;
-        color: #fff;
-}
-
-h1 strong {
-    color: #056fff;
-}
-
-.hero{
+.hero {
+    width: auto;
     height: 300px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.hero img {
+.hero-description {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(2px 4px 6px #000);
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(50%);
     width: 100%;
 }
 
 
-.hero-image {
-    object-fit: cover;
+h1 strong {
+    color: #056fff;
 }
 
 .portfolio, .form-contact, .experience {
@@ -122,8 +136,6 @@ h1 strong {
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    position: relative;
-    top: 0;
 }
 
 .project-detailsContainer {
@@ -164,14 +176,13 @@ h2 {
     background-color: #daf1f9;
 }
 
-
 .experience-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    flex-shrink: 0;   
+    flex-shrink: 0;
 }
 
 .experience-descriptionContent {
@@ -210,7 +221,7 @@ h2 {
 
 .form-contact input {
     border-color: gray;
-    padding:  5px 20px 5px 25px;
+    padding: 5px 20px 5px 25px;
     margin: 1em auto;
     background-image: url('../images/envelope.svg');
     background-size: 15px 15px;
@@ -300,7 +311,6 @@ span {
     color: red;
 }
 
-
 .container {
     max-width: 1000px;
     width: 100%;
@@ -312,12 +322,10 @@ span {
     flex-wrap: inherit;
 }
 
-
 /* Desktop first start of big query */
 
-
 @media screen and (max-width: 1024px) {
-     .hero {
+    .hero {
         height: auto;
         position: relative;
         top: 0;
@@ -325,8 +333,8 @@ span {
         left: 0;
         bottom: 0;
         padding: 2em;
+        overflow: hidden;
     }
-
     .hero-image {
         position: absolute;
         top: 0;
@@ -336,105 +344,86 @@ span {
         z-index: 0;
         filter: grayscale(50%);
     }
-
     .hero-description {
-        position: absolute;
+        position: relative;
         filter: drop-shadow(2px 4px 6px #000);
         font-size: 2em;
         top: 0;
         z-index: 1;
     }
-
 }
 
 @media screen and (max-width: 767px) {
-
-
-
     .header {
         display: block;
         height: auto;
     }
-
     .header ul {
         display: initial;
     }
-
     .header ul li {
         height: 50px;
     }
-
     .header ul li a {
-        justify-content: center;    
+        justify-content: center;
     }
-
     .header .logo {
         text-align: center;
     }
-
     .projects {
-        display: block; 
+        display: block;
     }
-
     .project-detailsContainer {
         width: auto;
         font-size: 16px;
-}
-
+    }
     .project-imageContainer {
         width: auto;
         text-align: center;
         margin: .4em;
-}
-
+    }
     .project-title {
         font-size: 1.5em;
         margin: .4em;
     }
-
     .project-language {
         font-size: 0.9em;
         margin: .4em;
     }
-
     .project-date {
         font-size: 0.8em;
         margin: .4em;
     }
-
     .view-project {
-        font-size: 0.8em; 
-        margin: .4em;       
+        font-size: 0.8em;
+        margin: .4em;
     }
-
-
     .my-experience {
-        width: auto; 
+        width: auto;
         flex-shrink: initial;
     }
-
     .form-contact, .form-contact input, .form-contact button {
-    padding: 1em;
-    display: block;
-    text-align: center;
-}
-
+        padding: 1em;
+        display: block;
+        text-align: center;
+    }
     .footer {
         display: block;
         text-align: center;
         padding: 1em;
     }
-
-
 }
 
+@media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 480px) {
-    
+@media screen and (max-width: 320px) {}
+
+
+video.html-video {
+    width: 100%;
 }
 
-
-@media screen and (max-width: 320px) {
-    
+.youtube-video {
+    width: 100%;
 }
 
