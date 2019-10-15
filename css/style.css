@@ -160,7 +160,6 @@ h2 {
     overflow: hidden;
     flex-shrink: 0;
     padding: 0 20px;
-    margin: 0 0 20px;
     flex-wrap: wrap;
 }
 
@@ -173,6 +172,7 @@ h2 {
     border-radius: 5px;
     width: 48%;
     margin: 0 auto;
+    margin-bottom: 20px;
     background-color: #daf1f9;
 }
 
@@ -358,6 +358,12 @@ span {
         display: block;
         height: auto;
     }
+
+    .burguer {
+        display: block;
+        cursor: pointer;
+    }
+
     .header ul {
         display: initial;
     }
@@ -416,7 +422,19 @@ span {
 
 @media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    .experience-descriptionContent {
+    margin: 1em 1.5em;
+    padding: 1em;
+}
+
+.projects {
+    padding: 1.5em;
+    margin: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+}
 
 
 video.html-video {
