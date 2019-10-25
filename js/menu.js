@@ -11,11 +11,6 @@ const navSlide = () => {
         //Burguer animation
         burguer.classList.toggle('toggle');
     });
-
-   
 }
-
-
-
 
 navSlide();
